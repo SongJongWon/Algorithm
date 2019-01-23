@@ -8,7 +8,7 @@ using namespace std;
 const int infi = 999999;
 
 vector<pair<int, int>> map[20000];
-int visited[20000] = { 0, };
+//int visited[20000] = { 0, };
 int result[20000] = { 0, };
 priority_queue< pair<int, int> > pq;
 queue<int> q;
@@ -20,7 +20,6 @@ void dijkstra() {
 	int t_result;
 	int min, check_pos;
 
-//	q.push(s);
 	pq.push({ 0, s });
 
 	while (pq.size()) {
