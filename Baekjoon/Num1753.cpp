@@ -8,7 +8,9 @@ using namespace std;
 const int infi = 999999;
 
 vector<pair<int, int>> map[20000];
-//int visited[20000] = { 0, };
+/* Version 1 */
+//int visited[20000] = { 0 , };
+bool visited[20000] = { 0, };
 int result[20000] = { 0, };
 priority_queue< pair<int, int> > pq;
 queue<int> q;
@@ -28,7 +30,7 @@ void dijkstra() {
 		temp = pq.top().second;
 		t_result = -1 * pq.top().first;
 		pq.pop();
-		/*
+		/* Version 1
 		temp = q.front();
 		q.pop();
 		t_result = result[temp];
@@ -36,15 +38,18 @@ void dijkstra() {
 		t_size = map[temp].size();
 
 		for (int i = 0; i < t_size; i++) {
+			int next_V = map[temp][i].first;
 			int new_val = t_result + map[temp][i].second;
-			int before_val = result[map[temp][i].first];
+			int before_val = result[next_V];
 
 			if (new_val < before_val) {
-				result[map[temp][i].first] = t_result + map[temp][i].second;
-				pq.push({ -1 * new_val, map[temp][i].first });
+				result[next_V] = new_val;
+				if(!visited[next_V]) pq.push({ -1 * new_val, map[temp][i].first });
 			}
 		}
-		/*
+
+		visited[temp] = 1;
+		/* Version 1
 		visited[temp] = 1;
 
 		for (int i = 0; i < v; i++) {
