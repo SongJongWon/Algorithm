@@ -14,7 +14,7 @@ void bruteForce(int size, int temp, int sum) {
 	for (int i = temp; i < n + 1 - size; i++) {
 		temp_sum = sum;
 		temp_sum += input[i];
-		//cout << temp << " : " << i << " : " << temp_sum << " : " << size << endl;
+		
 		if (size > 1) {
 			bruteForce(size-1, i+1, temp_sum);
 		}
@@ -25,13 +25,14 @@ void bruteForce(int size, int temp, int sum) {
 			}
 		}
 	}
-	
-	/*
-	for (int i = 0; i < n + 1 - size; i++) {
-		sum = 0;
-		for (int z = 0; z < n; z++) {
+}
 
-		}
+/* Version 1
+void bruteForce(int size) {
+	int temp_size, sum, j;
+
+  	for (int i = 0; i < n + 1 - size; i++) {
+		sum = 0;
 		j = i;
 
 		temp_size = size;
@@ -40,14 +41,14 @@ void bruteForce(int size, int temp, int sum) {
 			j += 1;
 			temp_size -= 1;
 		}
-		cout << i << " : " << size << " - " << sum << endl;
+		
 		if (sum == s) {
 			cout << sum << " == "<< s << endl;
 			result += 1;
 		}
 	}
-	*/
 }
+*/
 
 int main() {
 	
@@ -58,6 +59,7 @@ int main() {
 	}
 
 	for (int i = 1; i < n+1; i++) {
+		//bruteForce(i);
 		bruteForce(i, 0, 0);
 	}
 	
