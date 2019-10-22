@@ -34,8 +34,8 @@ Algorithm Study
 
   - ***Programmers***
     - 조이스틱 ([C++](https://github.com/SongJongWon/Algorithm/blob/master/Programmers/Pro01.cpp))
-      - [Baekjoon/Link](https://programmers.co.kr/learn/courses/30/lessons/42860)
+      - [Programmers/Link](https://programmers.co.kr/learn/courses/30/lessons/42860)
     - 124 나라의 숫자 ([C++](https://github.com/SongJongWon/Algorithm/blob/master/Programmers/Pro02.cpp))
-      - [Baekjoon/Link](https://programmers.co.kr/learn/courses/30/lessons/12899)
+      - [Programmers/Link](https://programmers.co.kr/learn/courses/30/lessons/12899)
       
 ### Note
