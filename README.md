@@ -85,6 +85,8 @@ Algorithm Study
         - [Programmers/Link](https://programmers.co.kr/learn/courses/30/lessons/1831)
       - 캠핑 ([C++](https://github.com/SongJongWon/Algorithm/blob/master/Programmers/Pro05.cpp))
         - [Programmers/Link](https://programmers.co.kr/learn/courses/30/lessons/1833)
+      - [1차] 추석 트래픽 ([C++](https://github.com/SongJongWon/Algorithm/blob/master/Programmers/Pro08.cpp))
+        - [Programmers/Link](https://programmers.co.kr/learn/courses/30/lessons/17676)
     - Level 4
       - 징검다리 ([C++](https://github.com/SongJongWon/Algorithm/blob/master/Programmers/Pro06.cpp))
         - [Programmers/Link](https://programmers.co.kr/learn/courses/30/lessons/43236)
